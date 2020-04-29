@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.MoodAnalyseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-29T10:13:08" hostname="KYOOLBABA" time="0.003">
+  <properties/>
+  <testcase name="moodAnalyseShouldReturnSAD" classname="com.MoodAnalyseTest" time="0.002"/>
+  <testcase name="moodAnalyseShouldReturnHAPPY" classname="com.MoodAnalyseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
