@@ -5,21 +5,18 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class MoodAnalyseTest {
-    private   MoodAnalyser moodAnalyser;
-    @Before
-    public void setUp() throws Exception {
-         moodAnalyser = new MoodAnalyser();
-    }
 
     @Test
     public void moodAnalyseShouldReturnSAD() {
-        String mood=moodAnalyser.analyseMood("Im in Sad Mood");
+        MoodAnalyser moodAnalyser=new MoodAnalyser("Im in a Sad Mood");
+        String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("SAD",mood);
     }
 
     @Test
     public void moodAnalyseShouldReturnHAPPY() {
-        String mood=moodAnalyser.analyseMood("Im in any Mood");
+        MoodAnalyser moodAnalyser=new MoodAnalyser("Im in a Happy Mood");
+        String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("HAPPY",mood);
     }
 }
