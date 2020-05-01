@@ -1,4 +1,4 @@
-package com;
+package com.analysemood;
 
 import org.junit.Assert;
 import org.junit.Rule;
@@ -27,8 +27,27 @@ public class MoodAnalyseTest {
     @Test
     public void givenNullShouldReturnHappy() throws MoodException {
     MoodAnalyser moodAnalyser= new MoodAnalyser(null);
-        thrown.expect(MoodException.class);
-        thrown.expectMessage("Please enter proper mood");
-        String mood=moodAnalyser.analyseMood();
+    try{
+        moodAnalyser.analyseMood();
+    }catch (MoodException e){
+        Assert.assertEquals(MoodException.ExceptionType.ENTERED_NULL,e.type);
     }
-}
+
+    }
+    @Test
+    public void givenEmptyShouldReturnHappy() throws MoodException {
+        MoodAnalyser moodAnalyser= new MoodAnalyser("");
+        try{
+            moodAnalyser.analyseMood();
+        }catch (MoodException e){
+            Assert.assertEquals(MoodException.ExceptionType.ENTERED_EMPTY,e.type);
+        }
+
+    }
+
+
+
+     }
+
+
+

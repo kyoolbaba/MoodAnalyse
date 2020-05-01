@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.analysemood.MoodAnalyseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-01T03:33:46" hostname="KYOOLBABA" time="0.005">
+  <properties/>
+  <testcase name="givenEmptyShouldReturnHappy" classname="com.analysemood.MoodAnalyseTest" time="0.003"/>
+  <testcase name="moodAnalyseShouldReturnSAD" classname="com.analysemood.MoodAnalyseTest" time="0.0"/>
+  <testcase name="moodAnalyseShouldReturnHAPPY" classname="com.analysemood.MoodAnalyseTest" time="0.0"/>
+  <testcase name="givenNullShouldReturnHappy" classname="com.analysemood.MoodAnalyseTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
